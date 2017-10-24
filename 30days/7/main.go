@@ -19,7 +19,7 @@ func main() {
 	var a []int
 	for i := 0; i <= n-1; i++ {
 		var n int
-		scan(&n)
+		fmt.Scan(&n)
 		a = append(a, n)
 	}
 
@@ -38,9 +38,4 @@ func sprintReverse(a []int) string {
 		}
 	}
 	return (out)
-}
-
-func scan(n *int) int {
-	fmt.Scan(n)
-	return *n
 }

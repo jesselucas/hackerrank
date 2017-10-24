@@ -19,7 +19,7 @@ func main() {
 	var words []string
 	for i := 0; i <= T-1; i++ {
 		var w string
-		scan(&w)
+		fmt.Scan(&w)
 		words = append(words, w)
 	}
 
@@ -39,9 +39,4 @@ func extractEvenOdd(word string) (e string, o string) {
 	}
 
 	return e, o
-}
-
-func scan(w *string) string {
-	fmt.Scan(w)
-	return *w
 }
